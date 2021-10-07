@@ -1,5 +1,5 @@
-function displayQuote(name, pic_url, text, title) {
-    $('#quote').append(
+function displayQuote (name, pic_url, text, title) {
+  $('#quote').append(
         `<div class="carousel-item">
             <div class="row text-white my-4 ml-2">
                 <div class="d-flex justify-content-center flex-wrap m-auto ">
@@ -14,24 +14,24 @@ function displayQuote(name, pic_url, text, title) {
                 </div>
             </div>
         </div>`
-    )
+  );
 }
-  
-function quotes() {
-$('.loader').show()
-$.ajax({
+
+function quotes () {
+  $('.loader').show();
+  $.ajax({
     type: 'GET',
     url: 'https://smileschool-api.hbtn.info/quotes',
     error: function (error) {
-        alert(error)
+      alert(error);
     },
     success: function (response) {
-        response.forEach(({ name, pic_url, text, title }) => {
-            displayQuote(name, pic_url, text, title)
-        });
-        $('.carousel .carousel-item:first').addClass('active')
-        $('.loader').hide()
+      response.forEach(({ name, pic_url, text, title }) => {
+        displayQuote(name, pic_url, text, title);
+      });
+      $('.carousel .carousel-item:first').addClass('active');
+      $('.loader').hide();
     }
-})
+  });
 }
 quotes();
