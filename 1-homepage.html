@@ -10,7 +10,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="styles.css">
-      <script src="scripts.js"></script>
+      <script src="1-scripts.js"></script>
       <link rel="icon" type="image/png" href="images/favicon.png">
       <title>Holberton- Smile School</title>
   </head>
@@ -75,31 +75,21 @@
     <!--Start of MAIN-->
     <main>
       <!--SECTION CAROUSEL - Quotes-->
-       <section class="carousel_section text-white m-auto p-auto">
+      <section class="carousel_section text-white m-auto p-auto">
         <div class="container">
-          <div class="col-12 py-5 mx-auto">
-            <div class="loader" id="loaderQuotes"></div>
-            <div id="carouselQuote" class="carousel slide d-flex justify-content-center align-items-start" data-ride="carousel">
-              <!--prev arrow-->
-              <div class="carousel-control-prev d-flex align-items-start align-items-sm-center pt-5 pt-sm-0">
-                <a href="#carouselQuote" role="button" data-slide="prev">
-                  <img src="./images/arrow_white_left.png" aria-hidden="true" width="30">
-                  <span class="sr-only">Previous</span>
-                </a>
-              </div>
-              <!--next arrow-->
-              <div class="carousel-control-next d-flex align-items-start align-items-sm-center pt-5 pt-sm-0">
-                <a href="#carouselQuote" role="button" data-slide="next">
-                  <img src="images/arrow_white_right.png" aria-hidden="true" width="30">
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-              <!--Quotes Content-->
-              <div class="carousel-inner w-75" id="quotesContent">
-              </div>
+            <div id="carouselControls" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner" id="quote">
+                    <div class="loader"></div>
+                    <a class="carousel-control-prev align-items-start align-items-sm-center pt-5 pt-sm-0" href="#carouselControls" role="button" data-slide="prev">
+                        <img src="images/arrow_white_left.png" aria-hidden="true" alt="" width="30">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next align-items-start align-items-sm-center pt-5 pt-sm-0" href="#carouselControls" role="button" data-slide="next">
+                        <img class="" src="images/arrow_white_right.png" aria-hidden="true" alt="" width="30">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
       </section>
       <!--END OF CAROUSEL SECTION - Quotes-->
         </div>
