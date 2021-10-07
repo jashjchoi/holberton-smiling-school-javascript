@@ -2,13 +2,13 @@ function displayQuote (name, pic_url, text, title) {
   $('#quote').append(
         `<div class="carousel-item">
             <div class="row text-white my-4 ml-2">
-                <div class="d-flex justify-content-center flex-wrap m-auto ">
+                <div class="d-flex justify-content-center flex-wrap m-auto">
                     <div class="mx-0 px-0 mt-2 col col-md-4 d-flex justify-content-center">
                         <img src="${pic_url}"  class="rounded-circle" width="150" height="150">
                     </div>
                     <div class="m-3 col-sm-6 col-md-6">
-                        <p class="paragraph-carousel">${text}</p>
-                        <p class="name mt-4 mb-1">${name}</p>
+                        <p class="font-weight-light pr-4">${text}</p>
+                        <p class="font-weight-bold mt-4">${name}</p>
                         <p class="font-italic">${title}</p>
                     </div>
                 </div>
