@@ -180,7 +180,6 @@
   100% { transform: rotate(360deg); }
 }
 
-
   
   /* Task 3 - Set up carousel slider section
     ============================= */
@@ -201,8 +200,8 @@
   }
 
   .iconsPlay {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     display: block;
     margin: auto;
     top:20%; left: 50%; transform: translate(-50%, -30%);  
@@ -222,8 +221,8 @@
   }
   .reviewer {
     font-family: var(--font-family-title);  
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 25px;
   }
   .review_star {
     width: 15px;
@@ -388,10 +387,26 @@
   .form-group .dropdown-item:hover{
     color:var(--colorpurple) !important;  
   }
-  
+
   @media screen and (max-width: 480px) {
     .title {
       font-size: 60px;
     }
     
   }
+  
+  @media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+  }
+    
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+    
