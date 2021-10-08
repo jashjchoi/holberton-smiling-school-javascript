@@ -7,6 +7,7 @@ $(document).ready(() => {
     );
     startCarousel('#popularCarousel');
   });
+
   $('#latestLoader').show();
   $.get('https://smileschool-api.hbtn.info/latest-videos', (data) => {
     $('#latestLoader').hide();
@@ -41,7 +42,7 @@ $(document).ready(() => {
             <p class="card-text reviews text-muted w-75">${element['sub-title']}</p>
             <div class="row align-items-center">
                 <div class="col-2">
-                  <img src="${element.author_pic_url}" class="rounded-circle" "swidth="30px" height="30px"/>
+                  <img src="${element.author_pic_url}" class="rounded-circle" " width="30px" height="30px"/>
                 </div>
                 <p class="mt-3 ml-4 highlightText reviewer">${element.author}</p>
             </div>
