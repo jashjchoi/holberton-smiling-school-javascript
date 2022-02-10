@@ -1,6 +1,10 @@
 ### 0x0F. Build a web app in JavaScript
 
-## Learning Objectives
+
+![Imgur Image](https://i.imgur.com/QBgzFUP.jpg)
+
+## Objectives
+- Creating the dynamic Front-end page with Javascript and Jquery.
 - This project is intended to build a webpage based on Figma designer files
 [Homepage](https://www.figma.com/file/QYQqMYbdpAHL5xTclwJKSI/Homepage?node-id=0%3A1)
 [Pricing](https://www.figma.com/file/KLAI53jdYpfFNEy0O79ymB/Pricing)
